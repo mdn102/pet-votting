@@ -91,7 +91,7 @@ class App extends React.Component {
     return (
       <div className='main-container'>
         <h1 className='text header'>MY ANIMALS</h1>
-        
+
         <input className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
         <div className='cards'>{filtered}</div>
       </div>
@@ -118,22 +118,24 @@ class Individual extends React.Component {
   render() {
 
     return (
+      <div>
+        <div className='title'>
+          <h1>{this.props.title}</h1>
+          <div className='profile-image'>
+            <img className='imageCenter' alt={this.props.title} src={this.props.submitterAvatarUrl} />
+          </div>
 
-      <div className='title'>
-        <h1>{this.props.title}</h1>
-        <div className='profile-image'>
-          <img className='imageCenter' alt={this.props.title} src={this.props.submitterAvatarUrl} />
+          <a href={this.props.url}>{this.props.url}</a>
+          <p className='description'>{this.props.description}</p>
+          <div className='votes'>
+            <button onClick={this.buttonLike} className='like-button' />
+            <button onClick={this.buttonDislike} className='dislike-button'></button>
+            <h3>{this.props.votes}</h3>
+          </div>
         </div>
-
-        <a href={this.props.url}>{this.props.url}</a>
-        <p className='description'>{this.props.description}</p>
-        <div className='votes'>
-          <button onClick={this.buttonLike} className='like-button' />
-          <button onClick={this.buttonDislike} className='dislike-button'></button>
-          <h3>{this.props.votes}</h3>
-        </div>
-        <p className="text">Developed by Minh Nguyen @2020.</p>
+        <p className='description'>Developed by Minh Nguyen @2020.</p>
       </div>
+
 
 
 
