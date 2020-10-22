@@ -91,7 +91,7 @@ class App extends React.Component {
     return (
       <div className='main-container'>
         <h1 className='text header'>MY ANIMALS</h1>
-
+        <span>Developed by Minh Nguyen @2020.</span>
         <input className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
         <div className='cards'>{filtered}</div>
       </div>
