@@ -90,7 +90,7 @@ class App extends React.Component {
     ))
     return (
       <div className='main-container'>
-        <h1 className='text header'>MY PETS</h1>
+        <h1 className='text header'>MY FAVORITE PETS</h1>
 
         <input className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
         <div className='cards'>{filtered}</div>
