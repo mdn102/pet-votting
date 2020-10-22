@@ -16,22 +16,20 @@
 }
 
 .like-button{
-  color:white;
   background-image: url(./like.png);
   background-size: 100%;
   padding: 15px;
   border: none;
-  background-color:white;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
 }
 .dislike-button{
-  background-color: none;
   background-image: url(./finger.png);
   background-size: 100%;
   padding: 15px;
   border: none;
-  background-color:white;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
 }
@@ -49,12 +47,12 @@
   color: darkgray;
 }
 h1{
-  color: #907995;
+  color: #c05b20;
   font-weight: 600;
 
 }
 .text {
-  color:  #907995;
+  color:  #145fb4;
   border: 4px white solid;
   mix-blend-mode: multiply;
   font: 50px monospace;
@@ -87,7 +85,7 @@ h1{
   flex-direction: column;
   align-items: center;
   align-content: center;
-
+  background-color: green;
 }
 .titel{
   margin: 0 auto;
