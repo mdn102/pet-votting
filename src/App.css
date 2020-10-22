@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
+.main-container{
+  font-family: 'Montserrat', sans-serif;
+}
+.profile-image{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.imageCenter{
+  margin: 0 auto;
+  height: 110%;
+  width: auto;
+}
+
+.like-button{
+  color:white;
+  background-image: url(./like.png);
+  background-size: 100%;
+  padding: 15px;
+  border: none;
+  background-color:white;
+  outline: none;
+  cursor: pointer;
+}
+.dislike-button{
+  background-color: none;
+  background-image: url(./finger.png);
+  background-size: 100%;
+  padding: 15px;
+  border: none;
+  background-color:white;
+  outline: none;
+  cursor: pointer;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.description{
+  font-size: 20px;
+  text-align: center;
+}
+.header{
+  color: darkgray;
+}
+h1{
+  color: #907995;
+  font-weight: 600;
+
+}
+.text {
+  color:  #907995;
+  border: 4px white solid;
+  mix-blend-mode: multiply;
+  font: 50px monospace;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text.header {
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background-color:  white;
+}
+
+.votes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 40%;
+  justify-content: space-between;
+  
+}
+.title{
+  padding: 10px 20px;
+  border: lightgray .5px solid;
+  border-radius: 40px;
+  margin: 10px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+.titel{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  color: #383838;
+}
+.search{
+  width: 30%;
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: lightgray .5px solid;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+h3{
+  font-weight: 600;
+}
+.title:hover{
+  box-shadow: 0 0 10px #a58ea9;
+}
+
+@media only screen and (max-width:800px){
+  .title{
+    width: 70%;
+
+  }
+
+}
+@media only screen and (max-width:500px){
+  .title{
+    width: 80%;
+  }
+  .text {
+    color:  #907995;
+    border: 4px white solid;
+    mix-blend-mode: multiply;
+    font: 30px monospace;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+  
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+  .votes{
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 900px){
+  .votes{
+    width: 25%;
+  }
+}
