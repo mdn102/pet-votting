@@ -94,6 +94,7 @@ class App extends React.Component {
 
         <input className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
         <div className='cards'>{filtered}</div>
+        <p className='description'>Developed by Minh Nguyen @2020.</p>
       </div>
 
     )
@@ -118,24 +119,21 @@ class Individual extends React.Component {
   render() {
 
     return (
-      <div>
-        <div className='title'>
-          <h1>{this.props.title}</h1>
-          <div className='profile-image'>
-            <img className='imageCenter' alt={this.props.title} src={this.props.submitterAvatarUrl} />
-          </div>
 
-          <a href={this.props.url}>{this.props.url}</a>
-          <p className='description'>{this.props.description}</p>
-          <div className='votes'>
-            <button onClick={this.buttonLike} className='like-button' />
-            <button onClick={this.buttonDislike} className='dislike-button'></button>
-            <h3>{this.props.votes}</h3>
-          </div>
+      <div className='title'>
+        <h1>{this.props.title}</h1>
+        <div className='profile-image'>
+          <img className='imageCenter' alt={this.props.title} src={this.props.submitterAvatarUrl} />
         </div>
-        <p className='description'>Developed by Minh Nguyen @2020.</p>
-      </div>
 
+        <a href={this.props.url}>{this.props.url}</a>
+        <p className='description'>{this.props.description}</p>
+        <div className='votes'>
+          <button onClick={this.buttonLike} className='like-button' />
+          <button onClick={this.buttonDislike} className='dislike-button'></button>
+          <h3>{this.props.votes}</h3>
+        </div>
+      </div>
 
 
 
